@@ -135,5 +135,8 @@
       }
     }
   },
-  "defaultProject": "angular-native"
+  "defaultProject": "angular-native",
+  "cli": {
+    "defaultCollection": "@nativescript/schematics"
+  }
 }

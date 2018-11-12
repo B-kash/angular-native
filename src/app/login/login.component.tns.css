@@ -1,0 +1,12 @@
+/* Add mobile styles for the component here.  */
+.login-box{
+  justify-content: center;
+  background-size: cover;
+  align-items: center;
+}
+
+.login-inner-container{
+  width: 300em;
+  padding: 10em 16em;
+  background-color: #f0f0f0;
+}

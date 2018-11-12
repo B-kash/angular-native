@@ -1,0 +1,7 @@
+<ScrollView>
+<StackLayout >
+  <Button *ngFor="let patient of patients" text="{{patient.name}}" (tap)="onPatientClick()">
+
+  </Button>
+</StackLayout>
+</ScrollView>
