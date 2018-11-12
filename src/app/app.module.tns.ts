@@ -8,6 +8,8 @@ import { AboutComponent } from './about/about.component';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { HomeComponent } from './home/home.component';
+import { AddPatientComponent } from './add-patient/add-patient.component';
+import { ViewPatientComponent } from './view-patient/view-patient.component';
 
 
 // Uncomment and add to NgModule imports if you need to use two-way binding
@@ -24,6 +26,8 @@ import { HomeComponent } from './home/home.component';
     LoginComponent,
     SignUpComponent,
     HomeComponent,
+    AddPatientComponent,
+    ViewPatientComponent,
   ],
   imports: [
     NativeScriptModule,

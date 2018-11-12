@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from "@angular/router";
 
 @Component({
   selector: 'app-home',
@@ -8,7 +9,7 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   patients: any = [];
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
     this.patients=[];
@@ -21,8 +22,13 @@ export class HomeComponent implements OnInit {
     }
   }
 
-  onPatientClick(){
-    console.log("Patient clicked");
+  onPatientClick(patient){
+    console.log("Patient clicked",patient);
+    this.router.navigate(['/view-patient/',patient.id]);
   }
 
+  addPatient(){
+    console.log("Wanted to add a new Patient");
+    this.router.navigate(['/add-patient']);
+  }
 }
